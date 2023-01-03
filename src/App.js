@@ -1,10 +1,21 @@
-import './App.css';
+import "./App.css";
+import Header from "./components/Header";
+import Navbar from "./components/Navbar";
+import Dishes from "./components/Dishes";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="App">
-      Homepage
-    </div>
+    <>
+      <Navbar />
+      <Header />
+      <main>
+        <Dishes />
+        <Dishes />
+        <Dishes />
+      </main>
+      <Footer/>
+    </>
   );
 }
 
