@@ -1,0 +1,9 @@
+.logo__navbar{
+    width: 200px;
+}
+
+.navbar__list li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}

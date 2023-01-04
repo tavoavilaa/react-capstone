@@ -1,27 +1,29 @@
 import React from 'react'
+import './dishes.css'
 
-const Dishes = () => {
+const Dishes = ({name, image, description,price}) => {
   return (
-    <article>
+    <article className='card'>
           <img
-            src="https://via.placeholder.com/150/0000FF/808080 ?Text=Digital.com
-C/O https://placeholder.com/"
-            alt="dish"
+            className='card__img'
+            src={image}
+            alt={name}
           />
-          <div>
-            <p>Lorem, ipsum.</p>
-            <b>$12.99</b>
-          </div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
-            ipsam quas eum officia. Quas consequuntur unde modi sint iste, optio
-            recusandae quo. Aspernatur incidunt iusto id, assumenda inventore
-            hic blanditiis?
-          </p>
-          <a href="" role="button">
-            Order a delivery <i>-&gt;</i>
-          </a>
-        </article>
+         <div className='card__content'>
+          <div className='card__info'>
+              <p>{name}</p>
+              <b>{price}</b>
+            </div>
+            <p className='card__description'>
+            {
+              description
+            }
+            </p>
+            <a className='card__btn' href="/" role="button">
+              Order a delivery <i>-&gt;</i>
+            </a>
+         </div>
+    </article>
   )
 }
 
