@@ -1,5 +1,6 @@
-import React from 'react'
-import './dishes.css'
+import React from 'react';
+import './dishes.css';
+import { Link } from "react-router-dom";
 
 const Dishes = ({name, image, description,price}) => {
   return (
@@ -19,9 +20,9 @@ const Dishes = ({name, image, description,price}) => {
               description
             }
             </p>
-            <a className='card__btn' href="/" role="button">
+            <Link className='card__btn' to={"/order"} role="button">
               Order a delivery <i>-&gt;</i>
-            </a>
+            </Link>
          </div>
     </article>
   )

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "react-router-dom";
 import hero from '../img/hero.jpg'
 import './header.css'
 
@@ -13,9 +14,9 @@ const Header = () => {
             ipsa, repellendus sapiente exercitationem quam debitis praesentium
             magnam dignissimos quidem similique!
           </p>
-          <a href="/" role="button">
+          <Link to={"/booking"} role="button">
             Reserve a table
-          </a>
+          </Link>
         </div>
         <div className='hero'>
           <img
